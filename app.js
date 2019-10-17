@@ -46,7 +46,7 @@ function deflate(){
     let size = parseInt(numberStr, 10)
     
     if (size <= 10) {
-    // show explosion symbol
+    // show DONE alert
     alert('DONE')
     document.removeEventListener('keyup', handleKeyup)
     } else {
