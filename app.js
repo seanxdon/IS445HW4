@@ -38,8 +38,8 @@ para.style.fontSize= newFontSize;
 function deflate(){
 
     // get the current font size
-    // increase by 10px
-    // if it's too big, display an explosion symbol
+    // decrease by 10px
+    // if it's too small, display DONE in the alert 
     
     let fontSizeStr = window.getComputedStyle(para).getPropertyValue('font-size')
     let numberStr = fontSizeStr.substr(0, fontSizeStr.length - 2)
