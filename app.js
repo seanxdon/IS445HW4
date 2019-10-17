@@ -24,7 +24,7 @@ let fontSizeStr = window.getComputedStyle(para).getPropertyValue('font-size')
 let numberStr = fontSizeStr.substr(0, fontSizeStr.length - 2)
 let size = parseInt(numberStr, 10)
 
-if (size > 60) {
+if (size >= 60) {
 // show explosion symbol
 alert('💥')
 document.removeEventListener('keyup', handleKeyup)
